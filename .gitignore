@@ -1,0 +1,44 @@
+# Ignore shell script backup files and sensitive files
+*.bak
+*.swp
+*.swo
+*.log
+
+# Ignore SSH and private key files
+*.pem
+*.key
+*.pub
+id_rsa
+id_rsa.*
+id_dsa
+id_dsa.*
+
+# Ignore Terraform state and sensitive variable files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+crash.log
+override.tf
+override.tf.json
+terraform.tfvars
+.terraform/
+.terraform.lock.hcl
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore any files with sensitive data in common naming conventions
+secrets.*
+*.secret
+*.credentials
+*.config
+*.json
+*.yaml
+*.yml
+
+# Ignore output directories and generated files
+output/
+build/
+tmp/
